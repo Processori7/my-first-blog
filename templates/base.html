@@ -2,18 +2,23 @@
 {% load static %}
 <html>
   <head>
-    <title>Django blog</title>
+    <title>Наш IT-Mir!</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400" rel="stylesheet">
     <link href="{% static 'css/base.css' %}" rel="stylesheet">
+    <link href="{% static 'css/ger.css' %}" rel="stylesheet">
+    <script src = "{% static 'js/ger.js' %}"></script>
     <link href="{% static 'css/base.css' %}" rel="stylesheet">
+    <script src = "{% static 'js/snow.js' %}"></script>
   </head>
     <header>
-      <h1><a href="{% url 'home' %}">Django blog</a></h1>
+      <div id="garland" class="garland_4"><div id="nums_1">1</div></div><div style="position:absolute;top:-1000px"><a href="/publ/7" title="шаблоны для ucoz">ucoz шаблоны</a></div>
+      <h1><a href="{% url 'home' %}">Наш IT-Mir!</a></h1>
     </header>
     <div>
       {% block content %}
       {% endblock content %}
     </div>
+
   </body>
 </html>
 

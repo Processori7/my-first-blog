@@ -2,16 +2,20 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 18px;
+  /* background-image: url(https://images.wallpaperscraft.ru/image/single/soty_obem_zhelezznyj_167098_1680x1050.jpg); */
+  background-image: url(../img/bg.jpg);
 }
  
 header {
   border-bottom: 1px solid #999;
   margin-bottom: 2rem;
-  display: flex;
+  /* display: flex; */
+  text-align: center;
+  margin-top: 50;
 }
- 
+
 header h1 a {
-  color: red;
+  color: rgb(253, 6, 6);
   text-decoration: none;
 }
  
@@ -34,13 +38,14 @@ header h1 a {
  
 .post-entry h2 a,
 .post-entry h2 a:visited {
-  color: blue;
+  color: rgb(255, 125, 32);
   text-decoration: none;
 }
  
 .post-entry p {
   margin: 0;
   font-weight: 400;
+  color: gold;
 }
  
 .post-entry h2 a:hover {
