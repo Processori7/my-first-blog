@@ -120,12 +120,12 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 #Включить перед загрузкой на pythonanywhere
-STATIC_ROOT=os.path.join(BASE_DIR,"static/")
+#STATIC_ROOT=os.path.join(BASE_DIR,"static/")
 
 #Включить во время редактирования
-# STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR, "static"),
-# ]
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static/"),
+]
 MEDIA_URL = "/media/"
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
