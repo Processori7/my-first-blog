@@ -2,13 +2,17 @@
 {% load static %}
 <html>
   <head>
+    
     <title>Наш IT-Mir!</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400" rel="stylesheet">
     <link href="{% static 'css/base.css' %}" rel="stylesheet">
     <link href="{% static 'css/ger.css' %}" rel="stylesheet">
     <script src = "{% static 'js/ger.js' %}"></script>
-    <link href="{% static 'css/base.css' %}" rel="stylesheet">
-    <script src = "{% static 'js/snow.js' %}"></script>
+    <!-- <script src = "{% static 'js/snow.js' %}"></script> -->
+    <link href="{% static 'css/snowman.css' %}" rel="stylesheet">
+    <link href="{% static 'css/snow.css' %}" rel="stylesheet">
+    
+
   </head>
     <header>
       <div id="garland" class="garland_4"><div id="nums_1">1</div></div><div style="position:absolute;top:-1000px"><a href="/publ/7" title="шаблоны для ucoz">ucoz шаблоны</a></div>
@@ -18,7 +22,9 @@
       {% block content %}
       {% endblock content %}
     </div>
-
+    <span class="snowman"></span>
+    <span class="snow-layer"></span>
+     <div id="snow-container"></div>
   </body>
 </html>
 
