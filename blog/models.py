@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 from django.db import models
+from ckeditor_uploader.fields import RichTextUploadingField
 
 
 class Post(models.Model):
@@ -9,7 +10,8 @@ class Post(models.Model):
         'auth.User',
         on_delete=models.CASCADE,
     )
-    body = models.TextField()
+    preview = RichTextUploadingField(blank=True, null=True)
+    body = RichTextUploadingField(blank=True, null=True)
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
  
@@ -20,6 +22,3 @@ class Post(models.Model):
     def publish(self):
         self.published_date = timezone.now()
         self.save()
-
-    def __str__(self):
-        return self.title

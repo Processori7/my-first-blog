@@ -5,7 +5,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 18px;
   /* background-image: url(https://images.wallpaperscraft.ru/image/single/soty_obem_zhelezznyj_167098_1680x1050.jpg); */
-  background-image: url(../img/bg.jpg);
+  background: url(../img/bg.jpg);
   
 }
  
